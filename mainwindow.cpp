@@ -103,6 +103,15 @@ void MainWindow::whowon()
         ui->labelwon->setText("Tie");
         play=false;
          }
+    updatescore();
+}
+
+void MainWindow::updatescore()
+{
+    ui->label->setText("X: ");
+    ui->labelx->setNum(winnerx);
+    ui->label_11->setText("O: ");
+    ui->labelo->setNum(winnery);
 }
 
 void MainWindow::on_pushButton_clicked()

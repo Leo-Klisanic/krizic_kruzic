@@ -28,6 +28,7 @@ public:
 
     void whowon();
 
+    void updatescore();
 private slots:
 
     void on_pushButton_clicked();
