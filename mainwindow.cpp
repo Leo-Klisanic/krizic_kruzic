@@ -275,3 +275,38 @@ void MainWindow::on_pushButton_9_clicked()
     whowon();
     }
 }
+
+void MainWindow::on_actionReset_triggered()
+{
+    for(int w=0;w<3;w++){
+        for(int h=0;h<3;h++){
+            polje[w][h]=2;
+        }
+    }
+    i=0;
+    ui->label_2->setText(" ");
+    ui->label_3->setText(" ");
+    ui->label_4->setText(" ");
+    ui->label_5->setText(" ");
+    ui->label_6->setText(" ");
+    ui->label_7->setText(" ");
+    ui->label_8->setText(" ");
+    ui->label_9->setText(" ");
+    ui->label_10->setText(" ");
+    ui->pushButton->show();
+    ui->pushButton_2->show();
+    ui->pushButton_3->show();
+    ui->pushButton_4->show();
+    ui->pushButton_5->show();
+    ui->pushButton_6->show();
+    ui->pushButton_7->show();
+    ui->pushButton_8->show();
+    ui->pushButton_9->show();
+    ui->labelwon->setText(" ");
+    play=true;
+}
+
+void MainWindow::on_actionClose_triggered()
+{
+    qApp->exit();
+}
