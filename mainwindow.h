@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <iostream>
+#include <math.h>
+#include <fstream>
+#include <string>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -12,6 +16,12 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    int i=0;
+    QString simb;
+    int polje[3][3]={{2,2,2},
+                     {2,2,2},
+                     {2,2,2}};
+
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
