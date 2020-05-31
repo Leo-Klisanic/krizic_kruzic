@@ -21,5 +21,5 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    ui->textEdit->setText("1");
+    ui->textEdit->setText("O");
 }
