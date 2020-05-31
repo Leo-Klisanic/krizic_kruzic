@@ -66,7 +66,7 @@
    <widget class="QLabel" name="label_10">
     <property name="geometry">
      <rect>
-      <x>250</x>
+      <x>260</x>
       <y>240</y>
       <width>60</width>
       <height>60</height>
@@ -417,6 +417,29 @@
      <string/>
     </property>
    </widget>
+   <zorder>label_10</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_2</zorder>
+   <zorder>pushButton_8</zorder>
+   <zorder>labelwon</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>label_11</zorder>
+   <zorder>pushButton_7</zorder>
+   <zorder>pushButton_5</zorder>
+   <zorder>labelx</zorder>
+   <zorder>pushButton_4</zorder>
+   <zorder>pushButton_6</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>pushButton_9</zorder>
+   <zorder>label</zorder>
+   <zorder>labelo</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

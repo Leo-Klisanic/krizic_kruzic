@@ -21,9 +21,12 @@ public:
     int polje[3][3]={{2,2,2},
                      {2,2,2},
                      {2,2,2}};
-
+    bool play=true;
+    int winnerx=0, winnery=0;
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+    void whowon();
 
 private slots:
 
