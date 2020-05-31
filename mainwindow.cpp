@@ -310,3 +310,14 @@ void MainWindow::on_actionClose_triggered()
 {
     qApp->exit();
 }
+
+void MainWindow::on_actionSave_triggered()
+{
+    inx.open("scoresx.txt", std::ios::binary);
+    inx.write((char*)&winnerx, sizeof(winnerx));
+    inx.close();
+
+    iny.open("scoresy.txt", std::ios::binary);
+    iny.write((char*)&winnery, sizeof(winnery));
+    iny.close();
+}

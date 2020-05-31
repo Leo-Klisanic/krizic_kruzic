@@ -23,6 +23,11 @@ public:
                      {2,2,2}};
     bool play=true;
     int winnerx=0, winnery=0;
+    std::ofstream inx;
+    std::ofstream iny;
+
+    std::ifstream outx;
+    std::ifstream outy;
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
@@ -52,6 +57,8 @@ private slots:
     void on_actionReset_triggered();
 
     void on_actionClose_triggered();
+
+    void on_actionSave_triggered();
 
 private:
     Ui::MainWindow *ui;
