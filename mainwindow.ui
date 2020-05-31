@@ -456,6 +456,7 @@
     </property>
     <addaction name="actionReset"/>
     <addaction name="actionSave"/>
+    <addaction name="actionLast_Play"/>
     <addaction name="actionClose"/>
    </widget>
    <addaction name="menuReset"/>
@@ -474,6 +475,11 @@
   <action name="actionSave">
    <property name="text">
     <string>Save</string>
+   </property>
+  </action>
+  <action name="actionLast_Play">
+   <property name="text">
+    <string>Last Play</string>
    </property>
   </action>
  </widget>

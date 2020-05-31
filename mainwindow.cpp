@@ -321,3 +321,21 @@ void MainWindow::on_actionSave_triggered()
     iny.write((char*)&winnery, sizeof(winnery));
     iny.close();
 }
+
+void MainWindow::on_actionLast_Play_triggered()
+{
+    outx.open("scoresx.txt", std::ios::binary);
+    int last_winnerx;
+    outx.read((char*)&last_winnerx, sizeof(int));
+    outx.close();
+
+    outy.open("scoresy.txt", std::ios::binary);
+    int last_winnery;
+    outy.read((char*)&last_winnery, sizeof(int));
+    outy.close();
+
+    ui->label->setText("X: ");
+    ui->labelx->setNum(last_winnerx);
+    ui->label_11->setText("O: ");
+    ui->labelo->setNum(last_winnery);
+}
